@@ -1,0 +1,159 @@
+
+body /* font backup setting */ /* always select normal readable font for the body part since most of the content of the document is consisted in body part */
+{
+  margin: 0px;
+  text-align: center;
+  color: #40514E;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  /* if users system supports Helvetica neue, it will appear. if it does not support then heletica then arial and then any default sans-serif font would take place  */
+}
+h1 /*  embeded font concept  */
+{
+  color: #66bfbf;
+  margin: 50px auto 0 auto; /* if we change the width porperty here then we have to margin that element exclusively */
+  padding-top: 80px;
+  font-family: 'Sacramento', cursive; /* this font is linked from the internet source which is called embeded font. so each and every user can see it even if they have this style or not*/
+  font-size: 562.5%; /* 1em= 100% = 16px so for 90px we require 562.5% because if user has different font preferences in chorme (%) will set scale accroding to that  */
+  /* em (%) system uses the concept of inheritence if body font is 2em and we set h1 font as 5.625 em then we will actually see 11.25 em font same thing occur in (% system) */
+  /* rem means root em it does not imply any inheritence so it will give 5.625 em */
+}
+h2
+{
+  color: #66bfbf;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+}
+h3
+{
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+}
+p{
+  line-height: 2;
+}
+
+/**************  class selectors  ************/
+.top
+{
+  background-color: #EAF6F6;
+  padding-top: 50px;
+}
+
+.middle{
+  padding: 100px 0;
+}
+
+.bottom{
+  padding: 50px 0 20px;
+  background-color: #66BFBF;
+}
+
+.prog-image{
+  width: 25%;
+  border-radius: 100%;
+  float: left;  /* you can use the clear property for not wrapping entire content around the picture || make a different class for that content and add clear: left;   */
+  padding-right: 30px;
+}
+.swimmer{
+  width: 25%;
+  text-align: center;
+  float: right;
+  padding-left: 30px;
+}
+
+.skill-row{
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+}
+
+.top-cloud{
+  position: absolute;
+  right: 200px;
+  width: 15%;
+
+}
+.bottom-cloud{
+  position: absolute;
+  left: 200px;
+  padding-top : 10px;
+  width: 15%;
+}
+.mountain{
+  padding-top: 20px;
+  width: 40%;
+}
+.footer-link1{
+  color: #11999E;
+}
+.footer-link1{
+  color: #11999E;
+}
+a{
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none; /* it is underlined by default for hyperlink */
+}
+a:hover {
+  color: hotpink;
+}
+.ended{
+  color: #EAF6F6;
+  margin: 20px auto;
+  font-size: 0.75rem;
+}
+
+hr{
+  border-width: 7px;
+  border-style: dotted none none;
+  border-color: #EAF6F6;
+  width: 5%;
+  margin: 100px auto;
+}
+.BUTTON_VEU {
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   height: 10px;
+   line-height: 10px;
+   color: #FFFFFF;
+   font-family: Arial;
+   width: 116px;
+   font-size: 16px;
+   font-weight: 200;
+   padding: 18px;
+   background-color: #66BFBF;
+   -webkit-box-shadow: 1px 1px 20px 0 #000000;
+   -moz-box-shadow: 1px 1px 20px 0 #000000;
+   box-shadow: 1px 1px 20px 0 #000000;
+   text-shadow: 1px 1px 20px #000000;
+   border: solid #337FED 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+   margin-top: 50px;
+}
+
+.BUTTON_VEU:hover {
+   border: solid #337FED 1px;
+   background: #1E62D0;
+   background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+/* this is for understanding
+.description1{
+  clear:left;
+}
+.description2{
+  clear:right;
+}
+*/
+/* in absolute positioning we just have to set position   */

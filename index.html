@@ -1,0 +1,77 @@
+<!--  display property of the css , there are basically 4 properties (block,inline,inline-block,none)  -->
+<!-- <p> <div> <ol> <hr> are default block elements, these elements fills up the horizontal space in their left and right side  -->
+<!-- <span> <a> <textarea> <strong> are default inline elements, it only takes as much space as it requires  -->
+<!-- inline-block elements have both the properties, its width can be set and also they dont fill up the space of the horizontal -->
+<!-- none == it disable the display property of the content -->
+<!-- width property can be set in block and inline-block display property. || not in inline -->
+
+<!-- postioning  -->
+<!-- static -> folows the html rule || Static positioned elements are not affected by the top, bottom, left, and right properties. -->
+<!-- relative -> Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. rest of the elements are remain unchanged -->
+<!-- absolute -> means you are adding a margin to its parent element  -->
+<!-- fixed -> element is fixed to the webpage despite of scrolling the screen it stays in the page always  -->
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ayush Bhalani</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico"> <!-- favicon = small icon which is shown in the titlebar for that web site -->
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Satisfy&display=swap" rel="stylesheet">
+  </head>
+
+
+  <body>
+  <div class="top"> <!-- div is a content divison element. allows us to divide the content into seperate conntainers so we can affect the layout of each boc -->
+    <img class="top-cloud" src="images/cloud.png" alt="cloud-image">
+    <h1>I'm Ayush Bhalani</h1>
+    <h2>A programmer</h2>
+    <img class="bottom-cloud" src="images/cloud.png" alt="cloud-image">
+    <img class="mountain" src="images/mountain.png" alt="mountain-image">
+  </div> <!-- only div element is not very affective but div + css is. |||| here we dont have to specify the height because content inside it will do itself -->
+
+
+  <div class="middle">
+    <div class="profile">
+      <img src="https://media-exp1.licdn.com/dms/image/C4D03AQGsYWC6dYShzw/profile-displayphoto-shrink_100_100/0/1635017375408?e=1642636800&v=beta&t=p2LNuzGoDvGT1x-wYlPirUDjfQso5RHhf8awkko45rI" alt="Ayush Bhalani Profile Photo">
+      <h2>Hello.</h2>
+      <p>Btech ICT 3rd year student.</p>
+      <p>A web developer and competitive programmer</p>
+    </div>
+
+    <hr>
+
+    <div class="skills">
+      <h2>My Skills.</h2>
+      <div class="skill-row">
+        <img class="prog-image" src="https://c4.wallpaperflare.com/wallpaper/676/293/313/programmer-wallpaper-preview.jpg" alt="programming image">
+        <h3> Web-Development </h3>
+        <p class="description1">I have started learning web Development a few days ago.</p>
+      </div>
+      <div class="skill-row">
+        <img class="swimmer" src="https://media.istockphoto.com/photos/young-athletic-man-swimming-in-olympic-pool-picture-id1315223556?b=1&k=20&m=1315223556&s=170667a&w=0&h=XvufpaTy0-xNCHmvUW3OkUIXZz9NXeTaIx67OSxKuKk=" alt="swimming">
+        <h3>Swimming</h3>
+        <p class="description2">I learned swimming in Grade 5. Not professional swimmer though familiar with many swimming techniques.</p>
+      </div>
+    </div>
+    <hr>
+
+    <div class="contact-me">
+      <h2>Get In Touch</h2>
+      <h3>If you love programming as much as i do.</h3>
+      <p>You can hire me if you think i am eligible enough for the role.</p>
+      <a class="BUTTON_VEU" href="mailto:ayushbhalnai01@gmail.com">CONTACT ME</a>
+    </div>
+  </div>
+
+
+  <div class="bottom">
+    <a class="footer-link1" href="https://www.linkedin.com/in/ayush-bhalani-9a595b1ba">LinkedIn</a>
+    <a class="footer-link2" href="https://www.instagram.com/ayush.bhalani/">Instagram</a>
+    <p class="ended">© 2021 Ayush Bhalani.</p>
+  </div>
+
+  </body>
+</html>
